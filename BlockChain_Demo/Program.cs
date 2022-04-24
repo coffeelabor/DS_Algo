@@ -7,6 +7,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+/*
+ * blockchain waits until miner finds nonce
+ * add block creates new block pass params
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */ 
+
 namespace BlockChain_Demo
 {
     public class Program
