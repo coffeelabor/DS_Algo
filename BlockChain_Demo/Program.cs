@@ -1,3 +1,4 @@
+using BlockChain_Demo.Models;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
@@ -25,7 +26,10 @@ namespace BlockChain_Demo
         // Source https://dev.to/amir_ashy/simplest-blockchain-in-c-1f70
         public static void Main(string[] args)
         {
-            CreateHostBuilder(args).Build().Run();
+            Console.WriteLine("Starting Project...");
+            SimulatedNetwork simNet = new SimulatedNetwork();
+            Console.WriteLine(simNet.DisplaySimNetworkInfo());
+            //CreateHostBuilder(args).Build().Run();
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>

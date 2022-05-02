@@ -1,12 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "xzXo5B53RkWN8xlVy6j2VL6HiSOIxpD71WHGVRs0Ym+cdANeU5F6VeIGbqAmEn2o8JS612mUfDIPt3dwOksTPg==",
+  "dgSpecHash": "PzYJYOQGGEz6yNcWzIkcqz0wdBitwfW6w7J5fNJ3VHGBzg6GGjPc6xZCYInJ4SKtUV0lNLx33SD3Wjn2odW1MQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Reed\\Documents\\6_DMACC\\2022_Spring\\CIS_152_DataStructures\\DS_Algo\\BlockChain_Demo\\BlockChain_Demo.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Reed\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\5.0.16\\microsoft.aspnetcore.jsonpatch.5.0.16.nupkg.sha512",
+    "C:\\Users\\Reed\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\5.0.16\\microsoft.aspnetcore.mvc.newtonsoftjson.5.0.16.nupkg.sha512",
+    "C:\\Users\\Reed\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Reed\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\Reed\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\Reed\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512",
+    "C:\\Users\\Reed\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\Reed\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512",
     "C:\\Users\\Reed\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
     "C:\\Users\\Reed\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
     "C:\\Users\\Reed\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",

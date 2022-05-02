@@ -5,7 +5,10 @@ using System.Threading.Tasks;
 
 namespace BlockChain_Demo.Models
 {
-    public class Block
+    public class MerkleNode
     {
+       
+        public Transaction[] batchedTransaction;
+        public MerkleNode() { }
     }
 }
