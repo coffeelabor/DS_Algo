@@ -9,9 +9,7 @@ namespace BlockChain_Demo.Models
     public class SimulatedNetwork
     {
         public IList<User> SimUsers { get; set; }
-        //public IList<Transaction> SimTrans { get; set; }
         public List<Transaction> SimTrans = new List<Transaction>();
-        //public IList<string> TransIds { get; set; }
         public List<User> UsersWithPendingTrans = new List<User>();
         public Random rand = new Random();
         public MiningPool miningPool1 = new MiningPool();
@@ -33,7 +31,6 @@ namespace BlockChain_Demo.Models
             {
                 GenerateMoreSimUsers(2);
                 CreateSimTransactions(10);
-                //miningPool1.GenerateBlock(SimTrans); //need root hash
                 DemoChain.InsertNextBlock(miningPool1.GenerateBlock(SimTrans));
                 Console.WriteLine("Add new block? y or n ?");
                 userInput = Console.ReadLine();
@@ -84,7 +81,6 @@ namespace BlockChain_Demo.Models
 
                 uSender = SimUsers[sender];
                 uReceiver = SimUsers[receiver];
-                //Transaction newTransaction = new Transaction(uSender, uReceiver, string.Format("{0}{1}", timePassed, timeDifference), rand.Next(0, 100), (DemoChain.Size-1));
                 SimTrans.Add(new Transaction(uSender, uReceiver, string.Format("{0}{1}", timePassed, timeDifference), rand.Next(0, 100), (DemoChain.Size - 1)));
                 UsersWithPendingTrans.Add(uSender); // list of user objects with transactions attached
             }
@@ -94,7 +90,6 @@ namespace BlockChain_Demo.Models
             string simNetString;
             string simUserString = "USERS:\n";
             string simBlockString = "BLOCKS:\n";
-            //BlockChain helperChain = DemoChain;
             foreach(User user in SimUsers)
             { 
                 simUserString = simUserString + string.Format

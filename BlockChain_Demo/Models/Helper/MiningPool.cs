@@ -19,8 +19,6 @@ namespace BlockChain_Demo.Models
 
         public MerkleTree merkleTreeRoot;
         public InsertionSort sorting;
-        //Stopwatch swMining;
-        //private BlockHeader _headerDate;
         public MiningPool() // Treated As a Node.
         {
 
@@ -33,8 +31,6 @@ namespace BlockChain_Demo.Models
             getStringListID(pendingTrans);
             MerkleRootHash = merkleTreeRoot.CreateMerkleRoot(TransIds);
             BlockToMine = new Block(DateTime.Now, MerkleRootHash);
-            //DemoChain.InsertNextBlock(newBlock);
-            //BlockToMine.TransData = MerkleRootHash;
             BlockToMine.Nonce = mineBlock();
             
             return BlockToMine;
@@ -70,11 +66,6 @@ namespace BlockChain_Demo.Models
                 blockHashResult = Convert.ToBase64String(blockBytesResult);
             }
             return nonce;
-            // if winning pool?
-                // handle transaction.isProcessed = true
-                // handle transaction.timeInMemPool(current block height)
-                // only handle nodes that are receiver
-                    // call decrementPendingTransactions.  if 0 return
         }
     }
 }

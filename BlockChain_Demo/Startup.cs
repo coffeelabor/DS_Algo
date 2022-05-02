@@ -38,25 +38,8 @@ namespace BlockChain_Demo
                         .AllowAnyHeader()
                         .AllowAnyMethod();
                   });
-                //options.AddDefaultPolicy(
-                //    builder =>
-                //    {
-                //        builder.WithOrigins("http://localhost:3000/");
-                //    });
             });
 
-            //services.AddCors(c =>
-            //{
-            //    c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin().AllowAnyMethod()
-            //     .AllowAnyHeader());
-            //});
-
-            //services.AddControllersWithViews()
-            //    .AddNewtonsoftJson(options =>
-            //    options.SerializerSettings.ReferenceLoopHandling = Newtonsoft
-            //    .Json.ReferenceLoopHandling.Ignore)
-            //    .AddNewtonsoftJson(options => options.SerializerSettings.ContractResolver
-            //    = new DefaultContractResolver());
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
@@ -78,7 +61,6 @@ namespace BlockChain_Demo
             app.UseHttpsRedirection();
 
             app.UseRouting();
-            //app.UseCors("http://localhost:3000/");
             app.UseCors(MyAllowSpecificOrigins);
             app.UseAuthorization();
 

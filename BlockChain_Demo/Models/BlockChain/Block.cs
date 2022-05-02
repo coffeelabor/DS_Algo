@@ -18,12 +18,10 @@ namespace BlockChain_Demo.Models
         public string TransData { get; set; } // transactions 
         public int Nonce { get; set; }
 
-        //public Block(DateTime timeStamp, string prevHash, string transData)
         public Block(DateTime timeStamp, string transData)
         {
             BlockHeight = 0;
             TimeStamp = timeStamp;
-            //PrevHash = prevHash;
             TransData = transData;
             BlockHash = GetBlockHash();
         }

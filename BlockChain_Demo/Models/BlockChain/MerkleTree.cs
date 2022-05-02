@@ -11,7 +11,6 @@ namespace BlockChain_Demo.Models
     // Source: https://medium.com/coinmonks/merkle-root-of-a-bitcoin-block-calculated-in-c-8c659a3b3290
     public class MerkleTree
     {
-        //public string MerkleRootHash { get; set; }
         public MerkleTree() { }
 
         public string CreateMerkleRoot(IList<string> leafNodes)

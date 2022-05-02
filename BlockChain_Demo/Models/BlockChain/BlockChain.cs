@@ -8,8 +8,6 @@ namespace BlockChain_Demo.Models
     //Source: https://www.c-sharpcorner.com/article/blockchain-basics-building-a-blockchain-in-net-core/
     public class BlockChain
     {
-        //private int _transactionId = -1;
-        //private int _size = 0;
         public IList<Block> BlockChainList { get; set; }
         public int Size { get => BlockChainList.Count; }
         public BlockChain()
@@ -25,7 +23,6 @@ namespace BlockChain_Demo.Models
         // First Block of a BlockChain has to be a Specially Configured Block called a 'GenesisBlock'
         public Block GenerateGenesisBlock()
         {
-            //_size++;
             //first block has no prev hash or transaction data
             return new Block(DateTime.Now, "{}"); 
         }
@@ -48,10 +45,5 @@ namespace BlockChain_Demo.Models
             BlockChainList.Add(newBlock);
         }
 
-        //public int getNextTransID()
-        //{
-        //    _transactionId++;
-        //    return _transactionId;
-        //}
     }
 }

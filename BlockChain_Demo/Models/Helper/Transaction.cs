@@ -10,7 +10,6 @@ namespace BlockChain_Demo.Models
 {
     public class Transaction
     {
-        //public double Fee { get; set; }
         public string TransactionID { get; set; }
         public double Distance { get; set; }
         public int Amount { get; set; }
@@ -33,17 +32,10 @@ namespace BlockChain_Demo.Models
             TimeOfTransaction = transTime;
             BlockHeightEnter = blockHeight;
             IsProcessed = false;
-            //Fee = (feePriority / 100) * Amount;
+
 
         }
-        //public double GetEdgeWeight()
-        //{
-        //    double sx = Sender.Rgp.Fx;
-        //    double sy = Sender.Rgp.Fy;
-        //    double rx = Receiver.Rgp.Fx;
-        //    double ry = Receiver.Rgp.Fy;
-        //    return Math.Sqrt(Math.Pow((sx - rx), 2) + Math.Pow((sy - ry), 2));
-        //}
+
         public void setIsProcessed(int blockHeight)
         {
             BlockHeightProcessed = blockHeight;
@@ -51,7 +43,6 @@ namespace BlockChain_Demo.Models
         }
         public int timeInMemPool()
         {
-            // todo set based on blocks in memepool
             return 1;
         }
 
